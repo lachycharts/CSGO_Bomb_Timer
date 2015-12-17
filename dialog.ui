@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>322</width>
+    <height>319</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(10, 10, 10);</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="title">
+      <string>Gamestate Integration</string>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Server Port:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QLabel" name="label_3">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>CS:GO cfg folder:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLineEdit" name="gamestateFile_field">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+border: 1px solid;
+border-color: rgb(100, 100, 100);</string>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QPushButton" name="gamestateFile_browse">
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+background-color: rgb(50, 50, 50);
+border-style: outset;
+font: bold 8pt;
+padding: 6px;
+color: white;
+}
+
+QPushButton:hover:!pressed
+{
+  background-color: rgb(70, 70, 70);
+}
+
+QPushButton:disabled
+{
+	background-color: rgb(20, 20, 20);
+	color: rgb(100,100,100);
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Browse</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2" colspan="2">
+       <widget class="QLineEdit" name="port_field">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+border: 1px solid;
+border-color: rgb(100, 100, 100);</string>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="4">
+       <widget class="QPushButton" name="reloadCFG_button">
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+background-color: rgb(50, 50, 50);
+border-style: outset;
+font: bold 8pt;
+padding: 6px;
+color: white;
+}
+
+QPushButton:hover:!pressed
+{
+  background-color: rgb(70, 70, 70);
+}
+
+QPushButton:disabled
+{
+	background-color: rgb(20, 20, 20);
+	color: rgb(100,100,100);
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Reload gamestate .cfg:</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="title">
+      <string>Sound</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QCheckBox" name="sound_checkbox">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Use sounds:</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="sound_combobox">
+          <property name="styleSheet">
+           <string notr="true">    color:white;
+    background-color:rgba(10,10,10,255);
+    border-color: rgba(255,255,255,200);
+    border-width: 1px;
+    border-style: solid;</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Ding</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Ding Ding</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Beep</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Beep2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Lose Yourself</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Custom...</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLineEdit" name="soundBrowse_field">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255); background-color: rgb(0, 0, 0); border: 1px solid; border-color: rgb(100, 100, 100);</string>
+          </property>
+          <property name="frame">
+           <bool>false</bool>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="soundBrowse_button">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton
+{
+background-color: rgb(50, 50, 50);
+border-style: outset;
+font: bold 8pt;
+padding: 6px;
+color: white;
+}
+
+QPushButton:hover:!pressed
+{
+  background-color: rgb(70, 70, 70);
+}
+
+QPushButton:disabled
+{
+	background-color: rgb(20, 20, 20);
+	color: rgb(100,100,100);
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Browse</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Volume: </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSlider" name="sound_slider">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximum">
+           <number>100</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="soundVolume_label">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>%</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Sound times (e.g. 5,10,15):</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="soundTimes_field">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+border: 1px solid;
+border-color: rgb(100, 100, 100);</string>
+          </property>
+          <property name="frame">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_7">
+     <item>
+      <widget class="QPushButton" name="save_button">
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+background-color: rgb(50, 50, 50);
+border-style: outset;
+font: bold 8pt;
+padding: 6px;
+color: white;
+}
+
+QPushButton:hover:!pressed
+{
+  background-color: rgb(70, 70, 70);
+}
+
+QPushButton:disabled
+{
+	background-color: rgb(20, 20, 20);
+	color: rgb(100,100,100);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Save</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="cancel_button">
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+background-color: rgb(50, 50, 50);
+border-style: outset;
+font: bold 8pt;
+padding: 6px;
+color: white;
+}
+
+QPushButton:hover:!pressed
+{
+  background-color: rgb(70, 70, 70);
+}
+
+QPushButton:disabled
+{
+	background-color: rgb(20, 20, 20);
+	color: rgb(100,100,100);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Cancel</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="defaults_button">
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+background-color: rgb(50, 50, 50);
+border-style: outset;
+font: bold 8pt;
+padding: 6px;
+color: white;
+}
+
+QPushButton:hover:!pressed
+{
+  background-color: rgb(70, 70, 70);
+}
+
+QPushButton:disabled
+{
+	background-color: rgb(20, 20, 20);
+	color: rgb(100,100,100);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Defaults</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
